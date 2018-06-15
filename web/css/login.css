@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	min-width: 360px;
+	width:100%;
+	height:100%;
+	font-family: "Times New Roman","Microsoft Jhenghei","Microsoft YaHei",serif;
+} /*非常重要的样式让背景图片100%适应整个屏幕*/  
+
+ body{
+	 background: url(../imgs/68105765_p0.jpg) no-repeat top left; 
+	/*background: url(https://static.dreamwings.cn/wp-content/uploads/2016/08/back.jpg) no-repeat top left;*/
+	background-size: cover;
+	background-attachment: fixed;
+	content: "";
+	z-index: -1;
+	position: fixed;
+	/* -webkit-filter:blur(2px);
+	filter:blur(2px); */
+	width: 100%;
+	height: 100%;
+
+} 
+
+ .content{
+	position: relative;
+	top: 100px;	
+}
+
+.login-register{
+	width: 500px;
+	background: rgba(255,255,255,0.9);
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.login-input{
+	padding: 30px 20px;
+	position: relative;
+	width: 300px;
+	height: 30px;
+	font-size: 15px;
+	padding: 20px 10px;
+	background: rgba(255,255,255,0);
+	border: 1px solid #dca9a6;
+	box-shadow: 0px 0px 5px #f00;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.login-btn{
+	margin-top: 20px;
+}
+
+.register-btn{
+	margin-top: 20px;
+}
+
+.login-error{
+	color: #cb4042;
+}
+
+.register-error{
+	color: #cb4042;
+}
+
+.register{
+	display: none;
+}
+
+.turn-register{
+	cursor: pointer;
+}
+
+.turn-login{
+	cursor: pointer;
+}

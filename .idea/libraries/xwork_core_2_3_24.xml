@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xwork-core-2.3.24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/xwork-core-2.3.24.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
