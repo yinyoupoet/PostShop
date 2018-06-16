@@ -8,11 +8,18 @@
 
     <constant name="struts.objectFactory" value="spring"/>
 
-    <package name="userinfo" namespace="/" extends="struts-default">
-        <action name="add" class="addressAction" method="add">
-            <result name="success">/success.jsp</result>
-            <result name="input">/index.jsp</result>
+    <package name="yypt_shop" namespace="/" extends="struts-default">
+        <!--登录-->
+        <action name="login" class="action.LoginAction" method="Login">
+            <result name="success">/index.jsp</result>
+            <result name="input">/login_register.jsp</result>
         </action>
+        <!--注册-->
+        <action name="register" class="action.RegisterAction" method="doRegister">
+            <result name="success">/index.jsp</result>
+            <result name="input">/login_register.jsp</result>
+        </action>
+
     </package>
 
 </struts>

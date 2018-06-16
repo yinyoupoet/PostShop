@@ -52,5 +52,6 @@
     <orderEntry type="library" name="commons-pool2-2.3" level="project" />
     <orderEntry type="library" name="org.apache.struts:struts2-spring-plugin:2.3.24" level="project" />
     <orderEntry type="library" name="xwork-core-2.3.24" level="project" />
+    <orderEntry type="library" name="net.jawr.extensions:jawr-dwr3.x-extension:3.7" level="project" />
   </component>
 </module>

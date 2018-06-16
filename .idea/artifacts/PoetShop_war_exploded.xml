@@ -16,6 +16,7 @@
           <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
           <element id="library" level="project" name="Struts 2-2.5.14.1" />
           <element id="library" level="project" name="xwork-core-2.3.24" />
+          <element id="library" level="project" name="net.jawr.extensions:jawr-dwr3.x-extension:3.7" />
         </element>
       </element>
     </root>
