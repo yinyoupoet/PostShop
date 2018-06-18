@@ -24,7 +24,6 @@ public class UserDao {
         Session session = sessionFactory.openSession();
         String hql = "select count(id) from Userinfo userinfo where userName = ? AND userPwd = ?";
         Long num = (Long) session.createQuery(hql).setParameter(0,userinfo.getUserName()).setParameter(1,userinfo.getUserPwd()).uniqueResult();
-        // System.out.println(num);
         if(num >= 1){
             return true;
         }

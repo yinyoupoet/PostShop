@@ -4,6 +4,9 @@ import dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
+/**
+ * @author hasee
+ */
 public class RegisterCheckService {
     @Qualifier("userDao")
     @Autowired

@@ -13,7 +13,6 @@ public class LogOutAction extends ActionSupport implements SessionAware{
         try {
             logout();
         } catch (Exception e) {
-            // e.printStackTrace();
             return "input";
         }
         return SUCCESS;

@@ -30,7 +30,6 @@ public class GoodInfoAction extends ActionSupport implements ServletRequestAware
         try{
             goodinfo = goodsDao.getGoodInfoByGoodId(Integer.parseInt(goodId));
         }catch (Exception e){
-            // e.printStackTrace();
             return "input";
         }
         request.setAttribute("goodInfo",goodinfo);

@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;
 
+/**
+ * @author hasee
+ */
 public class LoginAction extends ActionSupport implements SessionAware{
     private String lUserName;
     private String lUserPwd;
@@ -18,7 +21,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
     @Autowired
     private UserDao userDao;
 
-    /*
+    /**
     * 登录
     * */
     public String login(){
@@ -66,7 +69,11 @@ public class LoginAction extends ActionSupport implements SessionAware{
         this.session = session;
     }
 
-    // 注销session
+    /**
+     * 注销session
+     * @return
+     * @throws Exception
+     */
     public String logout() throws Exception {
         if(this.session != null){
             ((org.apache.struts2.dispatcher.SessionMap<String, Object>) this.session).invalidate();
