@@ -1,0 +1,93 @@
+.nav-icon{
+	width: 2em;
+	cursor: pointer;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+.navbar-title{
+	margin-left: 30px;
+}
+
+.my-navbar{
+	position: relative;
+	margin-bottom: 0;
+}
+
+.nav-head-img{
+	width: 2em;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.isLogin{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	color: #000;
+	height: 50px;
+	padding: 15px 15px;
+}
+
+.nav-self-info{
+	position: relative;
+	text-align: left;
+	right: 0;
+	margin-top: 0;
+	width: 200px;
+	float: right;
+	background: rgba(252,250,242,0.8);
+	color: #fff;
+	box-shadow:-1px 1px 5px rgba(51,153,255,0.6);
+	display: none;
+	z-index: 100;
+}
+
+
+.head-info{
+	width: 4em;
+	height: 4em;
+	float: left;
+	margin-left: 8px;
+	margin-top: 10px;
+}
+
+.info-link{
+
+}
+
+.info-ul>li{
+	list-style: none;
+	padding: 5px;
+}
+
+
+
+.notLogin{
+	position: absolute;
+	margin: auto;
+	right: 20px;
+	cursor: pointer;
+
+}
+
+.shop-cart{
+	color:#f596aa;
+	font-size: 1.7em;
+	display: inline-block;
+	margin-right: 15px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.navbar-brand>img{
+	display: inline-block;
+}
+
+.shop-cart:hover{
+	color: #FF823D;
+}

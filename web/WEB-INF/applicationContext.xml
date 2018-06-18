@@ -25,9 +25,7 @@
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.connection.url">
-                    <![CDATA[jdbc:mysql://localhost:3306/java_shop?useUnicode=true&characterEncoding=utf-8]]>
-                </prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/java_shop</prop>
                 <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
             </props>
         </property>
@@ -35,11 +33,17 @@
         <property name="annotatedClasses">
             <list>
                 <value>bean.Userinfo</value>
+                <value>bean.Firstdirectory</value>
+                <value>bean.Goodinfo</value>
+                <value>bean.Seconddirectory</value>
             </list>
         </property>
         <property name="mappingLocations">
             <list>
                 <value>classpath:bean/Userinfo.hbm.xml</value>
+                <value>classpath:bean/Firstdirectory.hbm.xml</value>
+                <value>classpath:bean/Goodinfo.hbm.xml</value>
+                <value>classpath:bean/Seconddirectory.hbm.xml</value>
             </list>
         </property>
     </bean>
@@ -54,6 +58,10 @@
     </bean>
 
     <bean id="userDao" class="dao.UserDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <bean id="goodsDao" class="dao.GoodsDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 

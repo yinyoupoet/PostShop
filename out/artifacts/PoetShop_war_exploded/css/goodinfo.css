@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	/* display: flex; */
+
+	position: fixed;
+	overflow: auto;
+	background: url(../imgs/68105765_p0.jpg) fixed no-repeat;
+	z-index: 0;
+	padding-top: 50px;
+}
+
+.good-info-div{
+	padding: 30px;
+	z-index: 20;
+	background: rgba(255,255,255,0.7);
+	margin-bottom: 100px;
+}
+
+.good-img{
+	width: 100%;
+	padding:20px;
+}
+
+.good-title{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.good-link-title{
+	text-decoration: none;
+	color: #000;
+	transition:  all 0.5s;
+	font-weight: 300;
+
+	font-size: 35px;
+	font-family: 'yueyuan','Comic Sans MS','Helvetica Neue','微软雅黑','Microsoft Yahei','Microsoft Yahei',-apple-system,sans-serif;
+}
+.good-link-title:link{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.good-link-title:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+.good-link-title:hover{
+
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0px 0px 8px #000;
+
+	font-weight: bold;
+	font-family: 'yueyuan','Comic Sans MS','Helvetica Neue','微软雅黑','Microsoft Yahei','Microsoft Yahei',-apple-system,sans-serif;
+}
+.good-link-title:active{
+	text-decoration: none;
+	color: #000;
+}
+
+.good-price{
+	color:#cb4042;
+	display: inline-block;
+}
+
+.good-sale-volumn{
+	color: #eb7a77;
+	display: inline-block;
+}
+
+.good-select-amount{
+
+	width: 200px;
+	margin-left: 20px;
+}
+
+.good-stock{
+	margin-left: 20px;
+}
+
+.warning{
+	color: #cb4042;
+	display: none;
+}
+

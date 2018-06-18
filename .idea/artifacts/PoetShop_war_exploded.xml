@@ -17,6 +17,8 @@
           <element id="library" level="project" name="Struts 2-2.5.14.1" />
           <element id="library" level="project" name="xwork-core-2.3.24" />
           <element id="library" level="project" name="net.jawr.extensions:jawr-dwr3.x-extension:3.7" />
+          <element id="library" level="project" name="jstl" />
+          <element id="library" level="project" name="standard" />
         </element>
       </element>
     </root>

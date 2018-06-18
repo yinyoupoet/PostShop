@@ -21,7 +21,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
     /*
     * 登录
     * */
-    public String Login(){
+    public String login(){
         System.out.println(getlUserName() + ":" + getlUserPwd());
         // 获取用户 id
         int id = userDao.getUserIdByName(getlUserName());

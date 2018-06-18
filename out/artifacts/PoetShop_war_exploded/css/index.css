@@ -1,0 +1,248 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.manage-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.manage-left-nav-full{
+	background: rgba(255,255,255,0.3);
+	box-shadow: 1px 1px 5px rgba(51,153,255,0.6);
+	height: 100%;
+	width: 160px;
+	padding-bottom: 50px;
+	overflow: auto;
+}
+
+.manage-right-content{
+	flex:1;
+	margin-bottom: 50px;
+}
+
+.manage-iframe{
+	height: 100%;
+}
+
+.manage-main{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	position: absolute;
+	background: url(../imgs/68105765_p0.jpg);
+	z-index: 0;
+}
+
+
+.manage-left-title{
+	display: block;
+	background: rgba(36,147,110,0.8);
+	color: #fff;
+	padding: 10px 10px;
+	
+}
+
+.panel>a:focus,.manage-left-nav-full>a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.content-left-title:link{
+	text-decoration: none;
+	color: #fff;
+}
+.manage-left-title:visited{
+	text-decoration: none;
+	color: #fff;
+}
+
+.manage-left-title:hover{
+	text-decoration: none;
+	background:#0f4c3a;
+	color: #fff;
+}
+.manage-left-title:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.manage-left-subTitle{
+	background: rgba(255,255,255,1);
+}
+
+
+.manage-left-subTitle:hover{
+	background-color: rgba();
+}
+
+.panel-group>.panel{
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	border:0;
+}
+
+.panel-group .panel+.panel{
+	/*border-top: 1px solid #abd8b9;*/
+	margin: 0;
+}
+
+.panel-body{
+	padding: 0;
+}
+
+ .goods-head{
+	display: flex;
+	flex-flow: row wrap;
+} 
+
+
+/* 右边的容器，即设置背景颜色和位置 */
+.content-right-box{
+	background: rgba(255,255,255,0.9);
+	margin-bottom: 30px;
+	
+}
+/*搜索块*/
+.content-right-search{
+	padding: 30px 20px;
+	position: relative;
+}
+
+.content-search{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	padding: 20px 10px;
+	background: rgba(255,255,255,0);
+	border: 1px solid #dca9a6;
+	box-shadow: 0px 0px 5px #f00;
+	border-radius: 5px;
+}
+
+.manage-right-content{
+	margin-top: 20px;
+	overflow: auto;
+}
+
+.right-catalog{
+	min-width: 400px;
+	flex:2;
+	padding: 30px 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+	font-size: 23px;
+	font-family: "Times New Roman","Microsoft Jhenghei","Microsoft YaHei",serif;
+}
+
+.right-search{
+	min-width: 300px;
+	flex:1;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.goods-list{
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.good-item{
+	margin-right: 5px;
+	margin-left: 5px;
+	min-width: 400px;
+	max-width: 400px;
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.content-left-article-1-img-div{
+	overflow: hidden;
+}
+.content-left-article-1-img{
+	width: 100%;
+	height: 300px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 1s;
+}
+
+.content-left-article-1-img:hover{
+	transform: scale(1.4);
+}
+
+.content-left-article-1-title{
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+.content-left-link-title{
+	text-decoration: none;
+	color: #000;
+	transition:  all 0.5s;
+	font-weight: 300;
+	
+	font-size: 35px;
+	font-family: 'yueyuan','Comic Sans MS','Helvetica Neue','微软雅黑','Microsoft Yahei','Microsoft Yahei',-apple-system,sans-serif;
+}
+.content-left-link-title:link{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.content-left-link-title:visited{
+	text-decoration: none;
+	color: #000;
+}
+
+.content-left-link-title:hover{
+
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0px 0px 8px #000;
+	
+	font-weight: bold;
+	font-family: 'yueyuan','Comic Sans MS','Helvetica Neue','微软雅黑','Microsoft Yahei','Microsoft Yahei',-apple-system,sans-serif;
+}
+.content-left-link-title:active{
+	text-decoration: none;
+	color: #000;
+}
+
+.good-item-price{
+	margin-left: 20px;
+	color: red;
+	font-size: 20px;
+}
+
+.good-item-sales{
+	margin-right: 20px;
+	float: right;
+	font-size: 20px;
+	color: #FF823D;
+}
+
+.good-item-info-btn{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}

@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    
 
+    
 
     <!-- 在struts2之前加一个dwr -->
     <servlet>
@@ -53,4 +55,13 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>WEB-INF/applicationContext.xml</param-value>
     </context-param>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/View/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/View/error.jsp</location>
+    </error-page>
 </web-app>

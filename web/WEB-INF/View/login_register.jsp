@@ -13,11 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <title>吟游小铺——登录</title>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/scroll-style-change.css">
-    <link rel="stylesheet" type="text/css" href="./css/flow-border.css">
-    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/css/scroll-style-change.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/css/flow-border.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/css/login.css">
 
 </head>
 <body>
@@ -68,8 +68,6 @@
 
 
 
-
-
 <script type="text/javascript" src="<%= request.getContextPath()%>/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath()%>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath()%>/js/zoomify.js"></script>
@@ -77,6 +75,6 @@
 <script type="text/javascript" src="<%=request.getContextPath()%>/dwr/util.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath()%>/dwr/interface/dwrLogin.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath()%>/dwr/interface/dwrRegister.js"></script>
-<script type="text/javascript" src="./js/login.js"></script>
+<script type="text/javascript" src="<%= request.getContextPath()%>/js/login.js"></script>
 </body>
 </html>

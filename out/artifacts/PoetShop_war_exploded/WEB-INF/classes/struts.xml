@@ -8,16 +8,42 @@
 
     <constant name="struts.objectFactory" value="spring"/>
 
+
     <package name="yypt_shop" namespace="/" extends="struts-default">
+
+        <default-action-ref name="toLoginOrRegister"></default-action-ref>
+
+        <!--进入登录注册页面的action-->
+        <action name="toLoginOrRegister" class="action.ToLoginOrRegisterAction" method="showLoginOrRegister">
+            <result name="success">/WEB-INF/View/login_register.jsp</result>
+            <result name="index" type="redirectAction">index</result>
+            <result name="input">/WEB-INF/View/login_register.jsp</result>
+        </action>
+
         <!--登录-->
         <action name="login" class="action.LoginAction" method="Login">
-            <result name="success">/index.jsp</result>
-            <result name="input">/login_register.jsp</result>
+            <result name="success" type="redirectAction">index</result>
+            <result name="input">/WEB-INF/View/login_register.jsp</result>
         </action>
         <!--注册-->
         <action name="register" class="action.RegisterAction" method="doRegister">
-            <result name="success">/index.jsp</result>
-            <result name="input">/login_register.jsp</result>
+            <result name="success" type="redirectAction">index</result>
+            <result name="input">/WEB-INF/View/login_register.jsp</result>
+        </action>
+        <!--进入首页的action-->
+        <action name="index" class="action.ToIndexAction" method="execute">
+            <result name="success">/WEB-INF/View/index.jsp</result>
+            <result name="input">/WEB-INF/View/error.jsp</result>
+        </action>
+        <!--注销的Action-->
+        <action name="logout" class="action.LogOutAction" method="doLogOut">
+            <result name="success" type="redirectAction">toLoginOrRegister</result>
+            <result name="input">/WEB-INF/View/error.jsp</result>
+        </action>
+        <!--显示商品详情的action-->
+        <action name="goodinfo" class="action.GoodInfoAction" method="showGoodInfo">
+            <result name="success">/WEB-INF/View/goodinfo.jsp</result>
+            <result name="input">/WEB-INF/View/error.jsp</result>
         </action>
 
     </package>
